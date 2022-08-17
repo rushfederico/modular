@@ -31,6 +31,34 @@
   src: url("fonts/Agenda-ThinUltraCo.ttf") format("truetype");
 }
 
+#terceraContainer {
+  background-image: url("img/Recurso\ 16.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#crossContainer {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--blue);
+}
+
+#crossContainer h3 img {
+  width: 1rem;
+}
+
+#imageCarousel {
+  display: flex;
+}
+
+#imageCarousel div:first-child {
+  width: 1rem;
+}
+
+#imageCarousel div:last-child {
+  width: 1rem;
+}
+
 .negritaP {
   font-weight: bold !important;
 }
