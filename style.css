@@ -35,28 +35,64 @@
   background-image: url("img/Recurso\ 16.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 170vh;
 }
 
 #crossContainer {
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--blue);
 }
 
 #crossContainer h3 img {
   width: 1rem;
 }
 
-#imageCarousel {
+#imageCarousel:first-child {
+  width: 1rem;
+}
+
+#imgCarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#imageCarousel:last-child {
+  width: 1rem;
+}
+
+#oportunidadContainer {
+}
+
+#oportunidadContainer p {
   display: flex;
 }
 
-#imageCarousel div:first-child {
-  width: 1rem;
+#oportunidadContainer p span {
+  margin-right: 1rem;
 }
 
-#imageCarousel div:last-child {
-  width: 1rem;
+#modulosContainer {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#modulosContainer span {
+  width: 65%;
+}
+
+#modulosContainer ul li {
+  list-style-type: none;
+  margin-bottom: 0.2rem;
+}
+
+#etapa {
+  background-color: var(--yellow);
+  text-align: center;
+}
+
+#etapa h1 {
+  letter-spacing: 0.1rem;
 }
 
 .negritaP {
@@ -70,6 +106,9 @@
 .blancoP {
   color: white;
 }
+.sizeBigTitulo {
+  font-size: 2.4rem;
+}
 .sizeTitulo {
   font-size: 1.7rem;
   letter-spacing: 0.12rem;
@@ -78,11 +117,22 @@
   font-size: 1.3rem;
   letter-spacing: 0.11rem;
 }
+.sizeSubOtroTitulo {
+  font-size: 1.5rem;
+  letter-spacing: 0.115rem;
+}
+.sizeOtroTitulo {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
 .fontTitulo {
   font-family: "Agenda-Bold";
 }
 .fontSubtitulo {
   font-family: "Agenda-Medium";
+}
+.fontBlack {
+  font-family: "Agenda-Black";
 }
 #headContent {
   padding: 5rem;
@@ -96,6 +146,19 @@
 #headContent h2 {
   font-family: "Agenda-Medium";
 }
+
+#lastContent {
+  padding: 5rem;
+}
+
+#lastContent h1 {
+  margin-bottom: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+#lastContent h2 {
+  font-family: "Agenda-Medium";
+}
 .highlight {
   background-color: var(--yellow);
   display: block;
@@ -103,8 +166,22 @@
   margin-bottom: 0.7rem;
 }
 
+.resaltado {
+  background-color: var(--yellow);
+  width: fit-content;
+  padding: 0.2rem 0 0 0.3rem;
+}
+
+.resaltado h2 {
+  margin: 0;
+}
+
 #textContainerBotton img {
   margin-bottom: 10%;
+}
+
+#mapsContainer {
+  display: flex;
 }
 
 /* HEADER */
@@ -119,7 +196,7 @@
 }
 
 #logoFooter {
-  width: 100px;
+  width: 3rem;
 }
 
 #headContent p {
@@ -315,8 +392,15 @@ ul#headerBeneficios li span {
   width: 100%;
 }
 
+#lastFormSection {
+  background-image: url(img/Recurso\ 17.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 170vh;
+}
+
 footer {
-  background-color: #024f59;
+  background-color: var(--yellow);
   padding-top: 40px;
   padding-bottom: 40px;
 }
